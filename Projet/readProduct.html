@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8c5e189589.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Read Product</title>
+    <style>
+        #avis i{
+            color:goldenrod;
+            font-size: 1.2em;
+        }
+        #cardUser{
+            border-left:1px solid;
+            
+        }
+        #carouselExampleFade{
+            height:200px;
+        }
+        #carousel{
+            padding:0;
+        }
+        .card-header{
+            background-color:goldenrod
+        }
+        
+        </style>
+
+</head>
+<body>
+    <header>
+        <!-- Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Nom du site</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Les bières
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Par pays</a>
+                <a class="dropdown-item" href="#">Par type</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Modération</a>
+            </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" >
+            <input class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="Search">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Rechercher</button>
+            </form>
+        </div>
+        </nav>
+        <!-- Breadcrumb-->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                <li class="breadcrumb-item"><a href="#">Nos bières</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Bière (nom dynamique)</li>
+            </ol>
+        </nav>
+    </header>
+
+    <main class="container b-dark">
+        <section class="row">
+            <!-- Carte du produit -->
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Titre du produit</h2>
+                    </div>
+                    <div class="card-body bg-light">
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                    <img src="./img/img1.jpg" class="card-img-bottom" alt="...">
+                </div>
+            </div>
+            <!-- Carte utilisateur/brasseur -->
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Utilisateur/brasserie</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Adresse peut-être?.</h6>
+                    </div>
+                    <div class="card-body bg-light">
+                        <p class="card-text">
+                            Texte de présentation de la brasserie/utilisateur qui l'a ajouté sur le site
+                        </p>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore incidunt nisi pariatur eius magnam sed? Recusandae, esse alias assumenda optio nulla quisquam id excepturi! Reiciendis molestiae ipsam incidunt beatae deserunt!
+                        </p>
+                        <p>
+                            <a href="#" class="card-link">Différents lien potentiels vers ses publications</a>
+                        </p>
+                        <p>
+                            <a href="#" class="card-link">Différents lien potentiels</a>
+                        </p>
+                        <p>
+                            <a href="#" class="card-link">Différents lien potentiels</a>
+                        </p>
+                        <div class="mt-2">
+                            <span class="badge badge-pill badge-primary">Utilisateur</span>
+                            <span class="badge badge-pill badge-secondary">Brasseur</span>
+                            <span class="badge badge-pill badge-success">Indépendant</span>
+                            <span class="badge badge-pill badge-danger">Modérateur</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div id="avis">
+                            <h5>Avis</h5>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Carte du Produit-->
+        <section class="mt-2">
+            <!-- Card descriptif produit -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Description du produit/Caractéristiques etc..</h3>
+                </div>
+                <div class="card-body bg-light">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ut quam minima tenetur voluptatem fugiat expedita maxime, quis voluptatibus officiis dolores atque fugit ratione libero est perspiciatis rem minus deleniti?Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, sapiente. Possimus mollitia eveniet doloremque doloribus, officiis optio quos aut ad vero ipsa a pariatur, magnam eos autem ullam deleniti illo?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ut quam minima tenetur voluptatem fugiat expedita maxime, quis voluptatibus officiis dolores atque fugit ratione libero est perspiciatis rem minus deleniti?Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, sapiente. Possimus mollitia eveniet doloremque doloribus, officiis optio quos aut ad vero ipsa a pariatur, magnam eos autem ullam deleniti illo?
+                    </p>
+                </div>
+                <!-- Carousel des produits phares/Similaires -->
+                <div class="card-footer" id="carousel">
+                    <article id="carouselProduct">
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                            <div class="carousel-inner h-100">
+                                <div class="carousel-item active h-100">
+                                    <img src="./img/img3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="./img/img1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="./img/img3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                            </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <!-- Copier/Coller le footer déjà créée-->
+        </footer>
+    </main>
+</body>
+</html>
